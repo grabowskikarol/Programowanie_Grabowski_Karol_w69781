@@ -35,16 +35,19 @@ header p {
 }
 article, section {
     display: block; 
-    margin: 0 120px 0 120px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    margin-left: 120px; 
+    margin-right: 120px; 
     font-size: 20px; 
 }
 
 article {
     position: relative; 
-    display: inline-block;
+    display: fixed;
     flex-direction: row; 
-    align-items: center; 
-    justify-content: center;
+    align-items: right; 
+    justify-content: right;
     padding: 150px 120px; 
 }
 .article-element{
