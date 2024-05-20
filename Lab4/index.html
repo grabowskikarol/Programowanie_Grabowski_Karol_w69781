@@ -4,14 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <button id="z4_btn" onclick="zad4(this)">Przycisk 1</button>
-        <button id="z4_btn"onclick="zad4(this)">Przycisk 2</button>
-        <button id="z4_btn"onclick="zad4(this)">Przycisk 3</button>
-    </div>
+    <div id="main">
+        <p id="consol">zadania 1-3 wyśiwtlają sie w konsoli</p>
+        <div>
+                <p>Zadanie4 : </p>
+                <button class="btn" onclick="changeColor(this)">Przycisk 1</button>
+                <button class="btn" onclick="changeColor(this)">Przycisk 2</button>
+                <button class="btn" onclick="changeColor(this)">Przycisk 3</button>
+
+        </div>
+        <div>
+            <p>zadanie 5:</p>
+            <button class="btn" onclick="toggleVisibility()">Pokaż/Ukryj element</button>
+
+            <div id="toggleElement">
+                To znika lub pojawaia sie jak klikniesz na przycisk
+            </div>
+        </div>
+
+        <div class="input-container">
+            <p>zadanie 6: </p>
+            <input type="text" id="textInput" placeholder="Wpisz coś...">
+            <button class="btn" onclick="addItem()">Dodaj do listy</button>
+        </div>
     
+        <ul id="itemList"></ul>
+    
+         <div class="input-container">
+            <p>zadanie 7: </p>
+        <input type="text" id="poleImie" placeholder="Wpisz imię...">
+        <input type="text" id="poleNazwisko" placeholder="Wpisz nazwisko...">
+        <button class="przycisk" onclick="dodajDoTabeli()">Dodaj do tabeli</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaDane"></tbody>
+    </table>
+
+    <p>zad 8: </p>
+    <div class="container">
+        <input type="number" id="poleCelsjusz" class="pole-tekstowe" placeholder="Stopnie Celsjusza">
+        <button class="przycisk" onclick="konwertujNaFahrenheita()">Na Fahrenheita</button>
+        <span id="wynikFahrenheita"></span>
+    </div>
+    <div class="container">
+        <input type="number" id="poleFahrenheit" class="pole-tekstowe" placeholder="Stopnie Fahrenheita">
+        <button class="przycisk" onclick="konwertujNaCelsjusza()">Na Celsjusza</button>
+        <span id="wynikCelsjusza"></span>
+    </div>
+
+
+    <p>zad kalkulator: </p>
+    <div class="container">
+        <input type="number" id="liczba1" placeholder="Wpisz pierwszą liczbę">
+        <input type="number" id="liczba2" placeholder="Wpisz drugą liczbę">
+        <button onclick="dodaj()">Dodawanie</button>
+        <button onclick="odejmij()">Odejmowanie</button>
+        <button onclick="pomnoz()">Mnożenie</button>
+        <button onclick="podziel()">Dzielenie</button>
+        <button onclick="poteguj()">Potęgowanie</button>
+        <div id="wynik" class="result"></div>
+    </div>
+
+
+    </div> 
 </body>
 </html>
