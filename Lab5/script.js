@@ -57,33 +57,26 @@ function wypiszLiczby() {
 //ZAD 5
 let tablica = [12, 45, 23, 78, 56, 89, 34, 67, 29, 100];
 
-// a. zsumuj wartości
 let suma = tablica.reduce((acc, val) => acc + val, 0);
 console.log("Suma wartości:", suma);
 
-// b. znajdź liczby parzyste
 let parzyste = tablica.filter(num => num % 2 === 0);
 console.log("Liczby parzyste:", parzyste);
 
-// c. pomnóż wartości razy 3
 let pomnozone = tablica.map(num => num * 3);
 console.log("Pomnożone wartości razy 3:", pomnozone);
 
-// d. dodaj do tablicy swój numer albumu. Znajdź jego index w tablicy
 let numerAlbumu = 69781;
 tablica.push(numerAlbumu);
 let indexNumeruAlbumu = tablica.indexOf(numerAlbumu);
 console.log("Index numeru albumu:", indexNumeruAlbumu);
 
-// e. oblicz średnią arytmetyczną
 let srednia = suma / tablica.length;
 console.log("Średnia arytmetyczna:", srednia);
 
-// f. znajdź największą liczbę
 let najwieksza = Math.max(...tablica);
 console.log("Największa liczba:", najwieksza);
 
-// g. zlicz ilość wystąpień wybranej wartości
 let wybranaWartosc = 23;
 let iloscWystapien = tablica.filter(num => num === wybranaWartosc).length;
 console.log("Ilość wystąpień wybranej wartości:", iloscWystapien);
