@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Lab6</title>
+</head>
+<body>
+    <form id="registrationForm" action="#" method="post">
+        <table>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Email</th>
+                <th>Hasło</th>
+                <th>Płeć</th>
+                <th>Telefon</th>
+                <th>Data Urodzenia</th>
+                <th>Kraj</th>
+                <th>Województwo</th>
+                <th>Adres Zamieszkania</th>
+                <th>Adres korespondencyjny jest taki sam jak adres zamieszkania</th>
+                <th>Adres Korespondencyjny</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="imie" name="imie" required>
+                    <div class="error-message" id="imieError"></div>
+                </td>
+                <td>
+                    <input type="text" id="nazwisko" name="nazwisko" required>
+                    <div class="error-message" id="nazwiskoError"></div>
+                </td>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+                </td>
+                <td>
+                    <input type="password" id="haslo" name="haslo" minlength="8" required>
+                    <div class="error-message" id="hasloError"></div>
+                </td>
+                <td>
+                    <select id="plec" name="plec" required>
+                        <option value="">Wybierz...</option>
+                        <option value="mezczyzna">Mężczyzna</option>
+                        <option value="kobieta">Kobieta</option>
+                    </select>
+                    <div class="error-message" id="plecError"></div>
+                </td>
+                <td>
+                    <input type="text" id="telefon" name="telefon" required>
+                    <div class="error-message" id="telefonError"></div>
+                </td>
+                <td>
+                    <input type="date" id="dataUrodzenia" name="dataUrodzenia" required>
+                    <div class="error-message" id="dataUrodzeniaError"></div>
+                </td>
+                <td>
+                    <input type="text" id="kraj" name="kraj" required>
+                    <div class="error-message" id="krajError"></div>
+                </td>
+                <td>
+                    <input type="text" id="wojewodztwo" name="wojewodztwo" disabled>
+                    <div class="error-message" id="wojewodztwoError"></div>
+                </td>
+                <td>
+                    <input type="text" id="adresZamieszkania" name="adresZamieszkania" disabled>
+                    <div class="error-message" id="adresZamieszkaniaError"></div>
+                </td>
+                <td>
+                    <input type="checkbox" id="adresTakiSam" name="adresTakiSam" checked>
+                </td>
+                <td>
+                    <input type="text" id="adresKorespondencyjny" name="adresKorespondencyjny" disabled hidden>
+                    <div class="error-message" id="adresKorespondencyjnyError"></div>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Zapisz</button>
+    </form>
+</body>
+</html>
