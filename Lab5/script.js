@@ -82,7 +82,6 @@ let iloscWystapien = tablica.filter(num => num === wybranaWartosc).length;
 console.log("Ilość wystąpień wybranej wartości:", iloscWystapien);
 
 
-
 //ZAD 6
 
 function fibonacci(n) {
